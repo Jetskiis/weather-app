@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Top banner */
+#description-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+}
+
+#banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.5em;
+
+  background: skyblue;
+  padding: 1em;
+  width: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Temp select */
+#temperature {
+    margin-top: 1em;
+  }
+  
+  #temperature button {
+    padding: 0.5em;
+    margin-right: 1.5em;
+    font-size: 1em;
+    font-weight: 500;
+  }
+
+/*Search for city */
+#search-container {
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  margin-top: 1.5em;
+  width: 25em;
+}
+
+#search-container input {
+  padding: 0.5em;
+  width: 15em;
+
+
+  font-size: 1em;
+  background: rgb(219, 218, 218);
+  border: none;
+  border-radius: 10px;
+}
+
+#search-button {
+    padding: 0.25em;
+    background: rgb(7, 198, 231);
+    margin-left: 1em;
+}
+
+/*info display for today's weather */
+#weather-display {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 5em;
+}

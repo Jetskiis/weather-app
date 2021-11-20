@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div id="description-container">
+        <div id="banner">
+          <img src="https://img.icons8.com/office/50/000000/chance-of-storm.png"/>
+          <h1>Weather App</h1>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div id="temperature">
+        <button id="fahrenheit">F&#176;</button>
+        <button id="celsius">C&#176;</button>
+      </div>
+      <div id="search-container">
+        <input type="text" placeholder="City" id="search-bar" />
+        <button id="search-button">
+          <img
+            src="https://img.icons8.com/material-outlined/24/000000/search--v1.png"
+          />
+        </button>
+      </div>
+
+      <div id="weather-display">
+        <div id="today">
+          <h2 id="name">New York City</h2>
+          <div class="">
+            <img src="" alt="" class="today-weather-type" />
+          </div>
+          <div>
+            <h3 id="current-temp"></h3>
+            <h3 id="feels-like"></h3>
+            <h3 id="humidity"></h3>
+            <h3 id="high-low"></h3>
+          </div>
+        </div>
+
+        <div id="upcoming">
+          <div class="upcoming-forecast">
+            <div id="day-one">
+              <h4 class="name"></h4>
+              <img src="" alt="" />
+              <h5 class="high-low"></h5>
+            </div>
+            <div id="day-two">
+              <h4 class="name"></h4>
+              <img src="" alt="" />
+              <h5 class="high-low"></h5>
+            </div>
+            <div id="day-three">
+              <h4 class="name"></h4>
+              <img src="" alt="" />
+              <h5 class="high-low"></h5>
+            </div>
+            <div id="day-four">
+              <h4 class="name"></h4>
+              <img src="" alt="" />
+              <h5 class="high-low"></h5>
+            </div>
+            <div id="day-five">
+              <h4 class="name"></h4>
+              <img src="" alt="" />
+              <h5 class="high-low"></h5>
+            </div>
+            <div id="day-six">
+              <h4 class="name"></h4>
+              <img src="" alt="" />
+              <h5 class="high-low"></h4>
+            </div>
+            <div class="date"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
