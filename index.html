@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+
+  <script defer src="/weather-app/app.bundle.js"></script></head>
+  <body>
+    <header>
+      <div id="description-container">
+        <div id="banner">
+          <img src="https://img.icons8.com/office/50/000000/chance-of-storm.png"/>
+          <h1>Weather App</h1>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div id="userbar">
+        <div id="temperature">
+          <button id="fahrenheit">F&#176;</button>
+          <button id="celsius">C&#176;</button>
+        </div>
+        <div id="search-container">
+          <input type="text" placeholder="City" id="search-bar" />
+          <button id="search-button">
+            Search
+          </button>
+        </div>
+      </div>
+
+      <div id="weather-display">
+        <div id="today">
+          <h2 class="name">New York City</h2>
+          <div id="info-container">
+            <div>
+              <img src="https://img.icons8.com/external-justicon-lineal-color-justicon/140/000000/external-sunny-weather-justicon-lineal-color-justicon.png" alt="" class="today-weather-type" />
+            </div>
+            <div id="today-weather-text">
+              <h3 class="current-temp">50&#176F</h3>
+              <h3 class="feels-like">Feels like: 60&#176F</h3>
+              <h3 class="humidity">Humdity: 90%</h3>
+              <h3 class="high-low">64&#176 / 39&#176 </h3>
+              <i><h3 class="type">Sunny</h3></i>
+            </div>
+          </div>
+        </div>
+
+        <div id="upcoming-forecast">
+            <div class="upcoming" id="day-one">
+              <h4 class="date">11/17</h4>
+              <img src="https://img.icons8.com/ios-glyphs/45/000000/partly-cloudy-day--v1.png"/>
+              <h5 class="high-low">54&#176 / 22&#176</h5>
+              <h5 class="type"><i>Cloudy</i></h5>
+            </div>
+            <div class="upcoming" id="day-two">
+              <h4 class="date">11/18</h4>
+              <img src="https://img.icons8.com/ios-glyphs/45/000000/chance-of-storm.png"/>
+              <h5 class="high-low">54&#176 / 32&#176</h5>
+              <h5 class="type"><i>Rainy</i></h5>
+            </div>
+            <div class="upcoming" id="day-three">
+              <h4 class="date">11/19</h4>
+              <img src="https://img.icons8.com/ios-glyphs/45/000000/storm.png"/>
+              <h5 class="high-low">46&#176 / 19&#176</h5>
+              <h5 class="type"><i>Sunny</i></h5>
+            </div>
+            <div class="upcoming" id="day-four">
+              <h4 class="date">11/20</h4>
+              <img src="https://img.icons8.com/ios-glyphs/45/000000/sun--v1.png"/>
+              <h5 class="high-low">65&#176 / 40&#176</h5>
+              <h5 class="type"><i>Rainy</i></h5>
+            </div>
+            <div class="upcoming" id="day-five">
+              <h4 class="date">11/21</h4>
+              <img src="https://img.icons8.com/ios-glyphs/45/000000/sun--v1.png"/>
+              <h5 class="high-low">55&#176 / 29&#176</h5>
+              <h5 class="type"><i>Sunny</i></h5>
+            </div>
+            <div class="upcoming" id="day-six">
+              <h4 class="date">11/22</h4>
+              <img src="https://img.icons8.com/ios-glyphs/45/000000/torrential-rain.png"/>
+              <h5 class="high-low">59&#176 / 32&#176</h4>
+              <h5 class="type"><i>Snowy</i></h5>
+            </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
