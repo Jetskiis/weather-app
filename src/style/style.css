@@ -1,0 +1,201 @@
+:root {
+  --bg: ;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+/*Top banner */
+#description-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+}
+
+#banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.5em;
+
+  background: rgb(51, 51, 51);
+  color: rgb(28, 228, 135);
+  padding: 1em;
+  width: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main::before {
+  position: absolute;
+  top: 6.4em;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: auto;
+
+  content: "";
+  background: var(--bg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+#userbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Temp select */
+#temperature {
+  margin-top: 1em;
+}
+
+#temperature button {
+  background-color: rgb(0, 140, 255);
+  color: white;
+
+  padding: 0.5em;
+  margin-right: 1em;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+/*Search for city */
+#search-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 1.5em;
+  width: 25em;
+}
+
+#search-container input {
+  padding: 0.5em;
+  width: 15em;
+
+  font-size: 1.1em;
+  background: rgb(156, 155, 155);
+  border: none;
+  border-radius: 10px;
+}
+
+#search-button {
+  padding: 0.5em;
+
+  font-size: 1em;
+  font-weight: 500;
+  background: rgb(7, 198, 231);
+  margin-left: 1em;
+}
+
+/*info display for today's weather */
+#weather-display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 4em;
+}
+
+#today {
+  padding: 1.2em;
+  background: rgb(66, 66, 66);
+  border: 1px black solid;
+  border-radius: 0.5em;
+  box-shadow: 5px 5px gray;
+
+  color: white;
+  text-align: center;
+}
+
+#today .name {
+  font-size: 2.25em;
+  color: bisque;
+}
+
+#info-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1em;
+}
+
+#today-weather-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.2em;
+  margin-left: 2em;
+}
+
+.current-temp {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+/*Upcoming forecasts */
+
+#upcoming-forecast {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+
+  width: 50em;
+  margin-top: 6em;
+  padding: 1em;
+
+  background: rgb(0, 132, 255);
+  border: 1px black solid;
+  color: white;
+}
+
+.upcoming {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 8em;
+}
+
+.upcoming .date {
+  font-size: 1.4em;
+}
+
+.upcoming h5 {
+  font-size: 1.25em;
+}
+
+/* Toggle-able classes */
+.selected {
+  box-shadow: 0 0 2px 2px red;
+}
